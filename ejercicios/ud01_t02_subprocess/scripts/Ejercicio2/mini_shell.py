@@ -14,4 +14,21 @@ with open(nombre_fichero, "r") as fichero:
 #     #     alias[k] = v
 
 print(alias)
-    
+print("Bienvenido a mini shell (Si quieres salir escribe exit)")
+texto=input(">")
+texto.split(" ")
+match texto[0]:
+    case "verip":
+        texto[0] = "ipconfig"
+    case "toctoc":
+        texto[0] = "ping"
+print(texto)
+while(texto != "exit"):
+    texto=input(">")
+    texto.split(" ")
+    match texto[0]:
+        case "verip":
+            texto[0] = "ipconfig"
+        case "toctoc":
+            texto[0] = "ping"
+    print(texto)
