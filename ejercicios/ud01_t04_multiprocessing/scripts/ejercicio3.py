@@ -8,7 +8,7 @@ def rellenar(miArray, q, cola_tiene_algo):
         q.put(num+1)
         cola_tiene_algo.set()
         time.sleep(random.uniform(0,0.3))
-    print("Mi array llno: {}".format(list(miArray)))
+    print("Mi array lleno: {}".format(list(miArray)))
 
 def sumar(q, cola_tiene_algo):
     suma = 0
