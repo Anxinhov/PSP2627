@@ -14,6 +14,7 @@ if __name__ == "__main__":
     
     hilo1 = TareaContador(args= "Si")
     hilo2 = TareaContador(args= "No")
+    print("Inicio de la ejecución concurrente")
     hilo1.start()
     hilo2.start()
     hilo1.join()
