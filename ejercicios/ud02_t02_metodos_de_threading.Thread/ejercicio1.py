@@ -4,9 +4,10 @@ import time
 
 class TareaContador(threading.Thread):
     def run(self):
-
-        time.sleep(2)
-            
+        try:
+            time.sleep(2)
+        except Exception as e:
+            print(f"Error: {e}")
 
 if __name__ == "__main__":
     hilo = TareaContador()
