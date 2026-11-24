@@ -4,13 +4,12 @@ import time
 
 
 class TareaContador(threading.Thread):
-    def __init__(self,args):
-        super().__init__()
-        self.args = args
+    def __init__(self,nombre):
+        super().__init__(name= nombre)
     def run(self):
         try:
             for i in range(1,101):
-                print(f"{self.args}: {i}")
+                print(f"{self.args} {self.ident}: {i}")
                 time.sleep(0.1)
         except Exception as e:
             print(f"Error: {e}")
